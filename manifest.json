@@ -1,0 +1,21 @@
+{
+    "name": "LazyZeus",
+    "description": "Automatically login in Zeus",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_icon": "favicon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://zeus.ionis-it.com/*",
+                "https://zeus.ionis-it.com/*/",
+                "https://zeus.ionis-it.com/*/*"
+            ],
+            "js": [
+                "disconnectionHandler.js"
+            ]
+        }
+    ]
+}
